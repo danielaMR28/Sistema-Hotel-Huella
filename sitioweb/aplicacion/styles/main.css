@@ -1,0 +1,99 @@
+/* Estilos generales */
+:root {
+    --white: #FFFFFF;
+    --blue-sky: #E0F2FE; /* 100 */
+    --headers-blue: #0C4A6E;
+    --sub-blue: #0284C7;
+    --text-blue: #0369a1; /* 700 */
+    --blue-border: #BAE6FD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* Iconos azules */
+.blue-icon {
+    font-size: 4.8rem;
+    color: var(--sub-blue);
+}
+
+/* Estilos del formulario */
+.input--container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--text-blue);
+}
+
+.input-icon {
+    position: absolute;
+    top: 42px;
+    left: 12px;
+    font-size: 2.0rem;
+    color: var(--sub-blue);
+}
+
+input {
+    height: 40px;
+    margin-bottom: 16px;
+    padding: 0 40px;
+    font-size: 1.6rem;
+    border: 1px solid var(--blue-border);
+    border-radius: 8px;
+}
+
+input:focus {
+    outline: 2px solid var(--blue-border);
+}
+
+/* Mensaje de error */
+.error-message {
+    font-size: 1.2rem;
+    color: red;
+}
+
+/* Estilos del boton principal */
+.primary-button {
+    width: 100%;
+    height: 44px;
+    margin: 24px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    background-color: var(--sub-blue);
+    font-size: 1.6rem;
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.primary-button:hover {
+    background-color: var(--text-blue);
+}
+
+/* Estilos para el boton secundario */
+.secondary-button {
+    width: 100%;
+    height: 44px;
+    background-color: var(--blue-sky);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-blue);
+    border: 1px solid var(--blue-border);
+    border-radius: 8px;
+}

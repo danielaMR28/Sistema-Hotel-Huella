@@ -1,0 +1,111 @@
+/* Estilos generales */
+:root {
+    --bg-color: #F3F6F9;
+    --header-color: #2C6693;
+    --blue-color: #4A90E2;
+    --blue-hover: #1e3a8a;
+    --border-blue: #bfdbfe;
+    --gray-text: gray;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eff6ff;
+    font-family: "Inter", sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#confirmation--container {
+    width: 40%;
+    margin: 48px auto;
+    padding-bottom: 4px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: white;
+}
+
+h1 {
+    padding: 16px 0;
+    text-align: center;
+    background-color: var(--blue-color);
+    font-size: 28px;
+    font-weight: bolder;
+    color: white;
+}
+
+.reservation-info--container {
+    padding: 16px 24px;
+}
+
+.thanks-message {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.message1 {
+    font-size: 36px;
+    font-weight: bolder;
+    color: var(--header-color);
+}
+
+.message2 {
+    margin-top: -12px;
+    font-size: 20px;
+    color: gray;
+}
+
+.reservation-flex {
+    display: flex;
+}
+
+.reservation-flex div {
+    width: 50%;
+} 
+
+.reservation-info--name {
+    color: gray;
+}
+
+.reservation-info {
+    margin-top: -8px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--header-color);
+}
+
+.button-container {
+    padding: 0 24px;
+}
+
+.primary-button {
+    width: 100%;
+    height: 44px;
+    margin: 16px auto;
+    padding: 8px 0;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    background-color: var(--blue-color);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+}
+
+.primary-button:hover {
+    background-color: var(--header-color);
+}

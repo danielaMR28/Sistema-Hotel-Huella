@@ -1,0 +1,54 @@
+#time {
+    width: 150px;
+}
+
+.small-item {
+    padding: 16px 16px 0 16px;
+    background-color: var(--white);
+    border-radius: 8px;
+    border: 1px solid var(--blue-border);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.small-item div {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.small-item div i {
+    color: var(--text-blue);
+}
+
+.data {
+    font-size: 2.4rem;
+    font-weight: bolder;
+}
+
+.chart-container {
+    width: 50%;
+    margin-left: 35%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    border: 1px solid var(--blue-border);
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container p {
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    ; /* Texto oscuro */
+}
+
+canvas {
+    max-width: 100%; /* Asegura que la gráfica no exceda el contenedor */
+    height: auto;
+}

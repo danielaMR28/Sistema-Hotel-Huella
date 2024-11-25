@@ -1,0 +1,164 @@
+/* Estilos generales */
+body {
+    height: 100vh;
+    background: linear-gradient(to bottom, #e0f7ff, #ffffff);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+a:visited {
+    color: var(--text-blue);
+}
+
+/* Estilos del sidebar */
+.menu {
+    width: 20%;
+    height: 100vh;
+    margin-top: -20px;
+    padding: 24px;
+    position: fixed;
+    background-color: var(--white);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos del encabezado */
+header p {
+    margin-bottom: 48px;
+    font-size: 2.0rem;
+    font-weight: 600;
+    color: var(--text-blue);
+}
+
+/* Estilos de los contenedores de botones del menu */
+.menu-item--container {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 0 20px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--text-blue);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.menu-item--container:hover {
+    background-color: var(--blue-sky);
+}
+
+.menu-item--container i {
+    width: 20px;
+}
+
+/* Contenedor de habitaciones */
+main {
+    width: calc(80% - 40px);
+    margin: 20px;
+    margin-left: calc(20% + 20px);
+    padding: 28px;
+    background-color: var(--white);
+    border-radius: 8px;
+}
+
+main section {
+    display: flex;
+    justify-content: space-between;
+}
+
+main section:first-of-type div {
+    display: flex;
+    gap: 20px;
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: var(--headers-blue);
+}
+
+/* Estilos de la tabla */
+.table--container {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.room-table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    border-radius: 8px;
+}
+
+.room-table th {
+    text-align: left;
+    padding: 8px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--headers-blue);
+    border-bottom: 1px solid lightgray;
+}
+
+.room-table td {
+    padding: 8px;
+    text-align: left;
+    font-size: 1.4rem;
+    border-bottom: 1px solid lightgray;
+    transition: background-color 0.3s ease;
+}
+
+.room-table tr:hover {
+    background-color: #F5F5F5 ;
+}
+
+/* Alertas */
+.alert {
+    text-align: center;
+    font-size: 2.0rem;
+}
+
+.alert--sub-heading {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    color: var(--sub-blue);
+}
+
+/* Botones de acción */
+.edit-button,
+.delete-button {
+    padding: 8px 12px;
+    display: inline-block;
+    background: none;
+    font-size: 1.6rem;
+    color: black !important;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+select {
+    width: 150px;
+    margin-top: -8px;
+    padding: 8px;
+}
+
+.clean-button {
+    height: 44px;
+    margin-left: 40px;
+    padding: 0 16px;
+    background-color: var(--sub-blue);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+}
