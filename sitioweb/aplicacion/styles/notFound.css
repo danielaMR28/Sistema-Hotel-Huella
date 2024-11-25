@@ -1,0 +1,126 @@
+/* Estilos generales */
+:root {
+    --bg-color: #F3F6F9;
+    --header-color: #2C6693;
+    --blue-color: #4A90E2;
+    --blue-hover: #1e3a8a;
+    --border-blue: #bfdbfe;
+    --gray-text: gray;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eff6ff;
+    font-family: "Inter", sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main--container {
+    width: 30%;
+    height: auto;
+    padding: 16px 24px;
+    margin: 48px auto;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: white;
+}
+
+img {
+    width: 10%;
+    margin: 16px;
+    object-fit: contain;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bolder;
+    color: var(--header-color);
+}
+
+p {
+    margin: 16px 0;
+    text-align: center;
+    color: gray;
+}
+
+form {
+    width: 100%;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input--container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--blue-color);
+}
+
+.form-input {
+    width: 100%;
+    height: 44px;
+    margin-bottom: 16px;
+    padding-left: 16px;
+    outline: none;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+}
+
+.form-input:focus {
+    outline: 2px solid gray;
+    outline-offset: 2px;
+}
+
+.primary-button {
+    width: 100%;
+    height: 44px;
+    background-color: var(--blue-color);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.primary-button:hover {
+    background-color: var(--header-color);
+}
+
+.buttons-container {
+    margin: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.secondary-button {
+    width: 100%;
+    height: 44px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    font-weight: 600;
+    color: var(--blue-color);
+}
